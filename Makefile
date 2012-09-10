@@ -4,7 +4,7 @@ all:
 	if [ ! -d continent ]; then git clone git@github.com:rithis/continent.git; fi
 	make --directory continent --makefile ../Makefile subtree
 
-subtree: pull BootstrapBundle
+subtree: pull BootstrapBundle WebsiteIndexBundle
 
 pull:
 	git pull origin master:master
